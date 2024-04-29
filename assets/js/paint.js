@@ -13,12 +13,12 @@ function configureListeners() {
   }
   
   function addOpacity(event) {
-    event.target.classList.add("opacity");
+    event.target.style.opacity = '0.5';
     getProductInfo(event.target.id);
   }
   
   function removeOpacity(event) {
-    event.target.classList.remove("opacity");
+    event.target.style.opacity = '1';
   
     let element = document.getElementById('color-price');
     element.textContent = '';
